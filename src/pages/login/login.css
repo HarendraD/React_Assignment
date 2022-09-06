@@ -1,0 +1,21 @@
+.boxContainerInLogin{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%!important;
+    height: 80%!important;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 20px 1px slategrey!important;
+}
+
+
+.textField{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
