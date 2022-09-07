@@ -1,0 +1,8 @@
+.boxContainerInRegistration{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    background-color: rgb(215, 242, 250);
+}

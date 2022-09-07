@@ -91,7 +91,7 @@ class Login extends Component {
                                 style={{ paddingLeft: '65px' }}
                             >Create new user account ?
                                 <span>
-                                    <Link to="#"
+                                    <Link to="/registration"
                                         style={{ textDecoration: "none", paddingLeft: "10px" }}
                                     >
                                         click here
