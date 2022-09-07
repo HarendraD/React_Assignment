@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import TxtField from "../../component/textFields/txtField"
-import CommonBtn from "../../component/button/index";
+import TxtField from "../../component/textFields/txtField";
+import CommonBtn from "../../component/button";
 import "../login/login.css";
 
 class Login extends Component {
@@ -28,7 +28,7 @@ class Login extends Component {
                             alignItems: "center",
                             justifyContent: 'center'
                         }}>
-                            <h1>LOGIN</h1>
+                            <h1>Login</h1>
                         </Grid>
                         <Grid item xs={12} sx={{
                             display: 'flex',
@@ -39,7 +39,7 @@ class Login extends Component {
                             <TxtField
                                 varient='outlined'
                                 label="Enter Your User Name"
-                                style={{ width: '80%', margin: '20px' }}
+                                style={{ width: '80%' }}
                                 className='textField'
                                 type='text'
                             />
@@ -66,16 +66,22 @@ class Login extends Component {
                             alignItems: "center",
                             justifyContent: 'center'
                         }}>
-                            <Link to="#"
+                            <Link to="/dashboard"
                                 style={{ textDecoration: "none", width: "40%" }}
-
+                                onClick={(e) => {
+                                    let nav = document.getElementById("navBarContainer");
+                                    nav.style.display = 'flex'
+                                    console.log(nav)
+                                    let content = document.getElementById("contentContainer");
+                                    content.style.height = '90%'
+                                }}
                             >
                                 <CommonBtn
                                     variant='contained'
                                     label='Login'
                                     size='large'
                                     color='primary'
-                                    style={{ width: "100%", margin: '10px' }}
+                                    style={{ width: "100%" }}
                                 />
                             </Link>
                         </Grid>
@@ -91,7 +97,7 @@ class Login extends Component {
                                 style={{ paddingLeft: '65px' }}
                             >Create new user account ?
                                 <span>
-                                    <Link to="/registration"
+                                    <Link to="/userRegistration"
                                         style={{ textDecoration: "none", paddingLeft: "10px" }}
                                     >
                                         click here

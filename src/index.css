@@ -23,6 +23,12 @@ code {
   flex-wrap: wrap;
 }
 
+.navBarContainer{
+  display: none;
+  flex-direction: column;
+  height: 10%;
+  width: 100%;
+}
 
 .content{
   display: flex;
